@@ -1,0 +1,14 @@
+note over browser:
+User write a messege and 
+hit save
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server-->browser: {"message":"note created"}
+
+note over browser:
+the javascript file fetch the new note,
+creates a new html elemtent and append it 
+to the page. The page doesn't have to load 
+again. 
+end note
